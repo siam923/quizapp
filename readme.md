@@ -175,3 +175,23 @@ app.use("hello", (req, res, next) => {
 ```
 
 next Function: allows to know express when to move forward to next function or step
+
+### handling errors:
+
+creating demo error:
+const error = new Error("Message");
+next(error);
+
+Handle with middleware
+
+Error Middleware has 4 parameters
+(err, req, res, next) => {}
+
+## Part 2
+
+Organize routes in different folder.
+routes - (index.js, hello.js) like this
+
+### Static assets
+
+in public folder. express treats them as static assets
